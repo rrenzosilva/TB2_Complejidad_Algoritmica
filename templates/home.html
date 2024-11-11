@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="d-flex align-items-center justify-content-center flex-column text-center">
+
+        <spam class="pt-5 pb-5" id="hero">¡Conoce aquí que producto <br>es el ideal para ti!</spam>
+
+        <form action="/" method="post" class="p-4">
+            <div class="container text-center p-4  " id="cont-form">
+                <div class="row align-items-end">
+
+                    <div class="col">
+                        <label for="product">Product name</label>
+                        <input type="search" name="product" class="form-control">
+                    </div>
+
+                    <div class="col">
+                        <label for="category">Category</label>
+                        <select class="form-select" name="category">
+                            <option selected>Select the category</option>
+                            <option value="0">---</option>
+                            <option value="1">Baby Care</option>
+                            <option value="2">Bakery, Cakes & Dairy</option>
+                            <option value="3">Beauty & Hygiene</option>
+                            <option value="4">Beverages</option>
+                            <option value="5">Cleaning & Household</option>
+                            <option value="6">Eggs, Meat & Fish</option>
+                            <option value="7">Foodgrains, Oil & Masala</option>
+                            <option value="8">Fruits & Vegetables</option>
+                            <option value="9">Gourmet & World Food</option>
+                            <option value="10">Kitchen, Garden & Pets</option>
+                            <option value="11">Snacks & Branded Foods</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="sub_category">Sub-Category</label>
+                        <select class="form-select" name="sub_category">
+                            <option selected>Select the sub-category</option>
+                            <option value="0">---</option>
+                            <option value="1">All Purpose Cleaners</option>
+                            <option value="2">Appliances & Electricals</option>
+                            <option value="3">Atta, Flours & Sooji</option>
+                            <option value="4">Baby Accessories</option>
+                            <option value="5">Baby Bath & Hygiene</option>
+                            <option value="6">Baby Food & Formula</option>
+                            <option value="7">Bakery Snacks</option>
+                            <option value="8">Bakeware</option>
+                            <option value="9">Bath & Hand Wash</option>
+                            <option value="10">Bins & Bathroom Ware</option>
+                            <option value="11">Biscuits & Cookies</option>
+                            <option value="12">Breads & Buns</option>
+                            <option value="13">Breakfast Cereals</option>
+                            <option value="14">Cakes & Pastries</option>
+                            <option value="15">Car & Shoe Care</option>
+                            <option value="16">Cereals & Breakfast</option>
+                            <option value="17">Chocolates & Biscuits</option>
+                            <option value="18">Chocolates & Candies</option>
+                            <option value="19">Coffee</option>
+                            <option value="20">Cookies, Rusk & Khari</option>
+                            <option value="21">Cooking & Baking Needs</option>
+                            <option value="22">Cookware & Non Stick</option>
+                            <option value="23">Crockery & Cutlery</option>
+                            <option value="24">Cuts & Sprouts</option>
+                            <option value="25">Dairy</option>
+                            <option value="26">Dairy & Cheese</option>
+                            <option value="27">Dals & Pulses</option>
+                            <option value="28">Detergents & Dishwash</option>
+                            <option value="29">Diapers & Wipes</option>
+                            <option value="30">Disposables, Garbage Bag</option>
+                            <option value="31">Drinks & Beverages</option>
+                            <option value="32">Dry Fruits</option>
+                            <option value="33">Edible Oils & Ghee</option>
+                            <option value="34">Eggs</option>
+                            <option value="35">Energy & Soft Drinks</option>
+                            <option value="36">Exotic Fruits & Veggies</option>
+                            <option value="37">Feeding & Nursing</option>
+                            <option value="38">Feminine Hygiene</option>
+                            <option value="39">Fish & Seafood</option>
+                            <option value="40">Flask & Casserole</option>
+                            <option value="41">Fragrances & Deos</option>
+                            <option value="42">Fresh Fruits</option>
+                            <option value="43">Fresh Vegetables</option>
+                            <option value="44">Fresheners & Repellents</option>
+                            <option value="45">Frozen Veggies & Snacks</option>
+                            <option value="46">Fruit Juices & Drinks</option>
+                            <option value="47">Gardening</option>
+                            <option value="48">Gourmet Breads</option>
+                            <option value="49">Hair Care</option>
+                            <option value="50">Health & Medicine</option>
+                            <option value="51">Health Drink, Supplement</option>
+                            <option value="52">Herbs & Seasonings</option>
+                            <option value="53">Ice Creams & Desserts</option>
+                            <option value="54">Indian Mithai</option>
+                            <option value="55">Kitchen Accessories</option>
+                            <option value="56">Makeup</option>
+                            <option value="57">Masalas & Spices</option>
+                            <option value="58">Men's Grooming</option>
+                            <option value="59">Mops, Brushes & Scrubs</option>
+                            <option value="60">Mutton & Lamb</option>
+                            <option value="61">Non Dairy</option>
+                            <option value="62">Noodle, Pasta, Vermicelli</option>
+                            <option value="63">Oils & Vinegar</option>
+                            <option value="64">Oral Care</option>
+                            <option value="65">Oraln Care</option>
+                            <option value="66">Organic Fruits & Vegetables</option>
+                            <option value="67">Organic Staples</option>
+                            <option value="68">Party & Festive Needs</option>
+                            <option value="69">Pasta, Soup & Noodles</option>
+                            <option value="70">Pet Food & Accessories</option>
+                            <option value="71">Pickles & Chutney</option>
+                            <option value="72">Pooja Needs</option>
+                            <option value="73">Ready To Cook & Eat</option>
+                            <option value="74">Rice & Rice Products</option>
+                            <option value="75">Salt, Sugar & Jaggery</option>
+                            <option value="76">Sauces, Spreads & Dips</option>
+                            <option value="77">Sausages, Bacon & Salami</option>
+                            <option value="78">Skin Care</option>
+                            <option value="79">Snacks & Namkeen</option>
+                            <option value="80">Snacks, Dry Fruits Nuts</option>
+                            <option value="81">Spreads, Sauces, Ketchup</option>
+                            <option value="82">Stationery</option>
+                            <option value="83">Steel Utensils</option>
+                            <option value="84">Storage & Accessories</option>
+                            <option value="85">Tea</option>
+                            <option value="86">Tinned & Processed Food</option>
+                            <option value="87">Water</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row ">
+                    <div class="col">
+                        <br><br>
+                        <label for="raiting" class="form-label">Rating</label>
+                        <input type="range" min="0" max="5" class="form-range" name="raiting" id="raitingRange">
+                        <span id="raitingValue">0</span>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col pt-3">
+                        <input type="submit" value="Recommend" class="btn btn-success">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+
+
+    {% if error %}
+        <p style="color: white;">{{ error }}</p>
+    {% endif %}
+
+{% endblock %}

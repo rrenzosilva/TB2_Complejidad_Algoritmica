@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class="title"><u>Your recommendations:</u></h1>
+
+    <div class="row p-2">
+        {% for product in Product %}
+            <div class="col p-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.postimg.cc/GmD6bXBw/despensa-supermarket-logo.png"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Product: {{ product.getName() }}</p>
+                        <p class="card-text">Category: {{ product.getCategory() }}</p>
+                        <p class="card-text">Sub-category: {{ product.getsubCategory() }}</p>
+                        <p class="card-text">Brand: {{ product.getBrand() }}</p>
+                        <p class="card-text">Price: {{ product.getMarketPrice() }}</p>
+                        <p class="card-text">Rating: {{ product.getRating() }}</p>
+                        <p class="card-text">Description: {{ product.getDescription() }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
